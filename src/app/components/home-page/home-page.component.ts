@@ -14,6 +14,7 @@ export class HomePageComponent {
   selectedArgument='all'
 
   posts: Post[]= [];
+post: any;
 
   constructor(private redditService: RedditService){
     this.loadPosts()
@@ -29,5 +30,7 @@ export class HomePageComponent {
       next:data=> this.posts = data,
       error: err=> console.log(err)
     })
+
   }
+
 }

@@ -1,0 +1,32 @@
+#post-container{
+  display:flex;
+  padding: 4px;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.card{
+  width: 30vw;
+  height: 30vw;
+  justify-content: space-between;
+}
+
+
+.image-container{
+  display: flex;
+  align-items: center ;
+  justify-content: center;
+  padding-top: 20px ;
+}
+.card-image{
+  display: flex;
+  width: 50%;
+  height: auto;
+}
+
+.author{
+  font-size: x-large;
+  font-weight:bolder;
+}
+

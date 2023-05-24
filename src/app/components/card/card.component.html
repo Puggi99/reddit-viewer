@@ -1,0 +1,22 @@
+<div id="post-container">
+  <div *ngIf="post">
+    <mat-card class="card">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+
+        <mat-card-title class="author">{{ post.author }}</mat-card-title>
+        <mat-card-subtitle class="title"> {{ post.title }}</mat-card-subtitle>
+      </mat-card-header>
+      <div class="image-container">
+        <img mat-card-image class="card-image" src="{{post.thumbnail}}">
+      </div>
+      <mat-card-content>
+        <p>{{ post.selftext }}</p>
+      </mat-card-content>
+      <mat-card-actions>
+        <a mat-button href="http://{{ post.url }}">URL</a>
+        <a mat-button href="http://{{ post.url }}">PERMALINK</a>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
