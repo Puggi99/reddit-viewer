@@ -9,12 +9,12 @@ import { RedditService } from 'src/app/services/reddit-service/reddit.service';
 })
 export class HomePageComponent {
 
-  isLight = true;
+  isLight = false;
 
   selectedArgument='all'
 
   posts: Post[]= [];
-post: any;
+
 
   constructor(private redditService: RedditService){
     this.loadPosts()

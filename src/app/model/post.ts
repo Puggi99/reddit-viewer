@@ -5,5 +5,5 @@ export interface Post {
   permalink: string;
   author: string;
   selftext: string;
-  thumbnail: string;
+  thumbnail?: string;
 }

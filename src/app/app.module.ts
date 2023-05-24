@@ -13,7 +13,7 @@ import {MatSelectModule} from '@angular/material/select';
 import { FormsModule } from '@angular/forms';
 import {MatCard, MatCardModule} from '@angular/material/card';
 import { CardComponent } from './components/card/card.component';
-
+import {MatGridListModule} from '@angular/material/grid-list';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +30,8 @@ import { CardComponent } from './components/card/card.component';
     MatButtonModule,
     MatSelectModule,
     FormsModule,
-    MatCardModule
+    MatCardModule,
+    MatGridListModule
 
   ],
   providers: [],
